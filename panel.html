@@ -116,7 +116,7 @@
 
         .panel-frame {
             width: 100%;
-            height: calc(100vh - 120px);
+            height: 700px;
             border: none;
             background: #050507;
         }
@@ -125,77 +125,4 @@
             padding: 18px 20px 24px;
             text-align: center;
             font-size: 11px;
-            background: #050507;
-            color: var(--text-muted);
-            border-top: 1px solid #111;
-        }
-
-        @media (max-width: 800px) {
-            header {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 8px;
-            }
-
-            nav {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 8px;
-            }
-
-            nav a {
-                margin-left: 0;
-                margin-right: 12px;
-            }
-
-            .panel-hero {
-                padding: 20px 16px 8px;
-            }
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <div class="logo">
-        <div class="logo-circle">Z.</div>
-        <div class="logo-text">
-            <strong>Szymon Zowal</strong><br>
-            Trener Personalny
-        </div>
-    </div>
-    <nav>
-        <a href="index.html#o-mnie">O mnie</a>
-        <a href="index.html#oferta">Oferta</a>
-        <a href="index.html#opinie">Opinie</a>
-        <a href="index.html#kontakt">Kontakt</a>
-        <a href="panel.html">Panel klienta</a>
-    </nav>
-</header>
-
-<div class="panel-hero">
-    <h1>Panel klienta</h1>
-    <p>
-        Tutaj znajdziesz swój plan treningowy, liczbę wykorzystanych treningów oraz najbliższe terminy.
-        Indywidualny link do Twojego profilu otrzymasz ode mnie po rozpoczęciu współpracy.
-    </p>
-</div>
-
-<div class="panel-wrapper">
-    <iframe
-        class="panel-frame"
-        src="https://arlie72481.softr.app/profil-klienta?token=jan-12345"
->
-    </iframe>
-</div>
-
-<footer>
-    &copy; <span id="year"></span> Szymon Zowal - Trener Personalny. Wszystkie prawa zastrzeżone.
-</footer>
-
-<script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-
-</body>
-</html>
+            background: #0505
